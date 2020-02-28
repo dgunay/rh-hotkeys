@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "rh-hotkey",
+  "version": "0.0.1",
+  "description": "Hotkeys 'F' to focus on the search bar at robinhood.com",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://robinhood.com/"],
+      "js": [
+        "hotkeys.js"
+      ]
+    }
+  ],
+  "browser_action": {}
+}
